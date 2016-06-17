@@ -117,7 +117,7 @@ while failedreq < 5
     # handling blank request by auto terminating, doesn't add blank requests to past requests
     failedreq = 5
   elsif repeat
-    puts "Now you're just repeating yourself, that's not helping your case"
+    puts "Now you're just repeating yourself, that's not helping"
     # handle repeat by incrementing failed request counter faster, prevents adding repeated requests to the past_requests hash
     failedreq += 2
   else
