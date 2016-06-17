@@ -2,6 +2,9 @@ class Parent
   @name
   @hoursofsleep
   
+  attr_accessor :name
+  attr_reader :hoursofsleep
+  
   def initialize(name, hoursofsleep)
     @name = name
     @hoursofsleep = hoursofsleep
