@@ -34,6 +34,16 @@ class Parent
     answer
   end
   
+  def display_request_history
+    @past_requests.each do |ask,bool|
+      if bool
+        temp = "was granted"
+      else
+        temp = "was not granted"
+      end
+      puts "The request was '#{ask}' and it #{temp}"
+    end
+  end
   
 end
 
@@ -45,3 +55,4 @@ tesarr = ["can i have dog","buy me car", "please can I have an jet", "could i po
 tesarr.each do |testring|
   bob.hear_request(testring)
 end
+bob.display_request_history
