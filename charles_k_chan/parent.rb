@@ -73,9 +73,9 @@ class Parent
     elsif cups <= 2
       @hoursofsleep += cups
     elsif cups <= 5
-      @hoursofsleep = 2 + ((cups - 2)/2)
+      @hoursofsleep += 2 + ((cups - 2)/2)
     else
-      @hoursofsleep = 3.5 + ((cups - 5)/3)
+      @hoursofsleep += 3.5 + ((cups - 5)/3)
     end
     
   end
