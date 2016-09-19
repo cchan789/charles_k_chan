@@ -22,9 +22,12 @@ class Parent
   end
 
   def hear_request(ask)
-    ask = ask.to_s
+    ask = ask
     tarr = ask.split(' ')
     rlen = tarr.length
+    #rlen is the number of words in the request
+    #puts hoursofsleep
+    #puts rlen
     if hoursofsleep >= rlen
       puts "Okay, since you said '#{ask}' so nicely."
       answer = true
